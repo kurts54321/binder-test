@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test 1 : Background Image Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="sass/test1.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+        <!-- jQuery scripts go next, or an imbedded start-up -->
+        <script>
+        var lefttab = 1;
+
+        function swaptabs(thisleft, thisright, dir){
+            var leftitem = "#menuitem" + thisleft;
+            var rightitem = "#menuitem" + thisright;
+            var v1 = 0.01;
+            var v2 = 1;
+            if(dir){
+                v1 = 1;
+                v2 = 0.01;
+            };
+            $(leftitem).fadeTo("slow", v1);
+            $(rightitem).fadeTo("slow", v2);
+        }
+
+        $(document).ready(function(){
+
+        // jQuery methods go here...
+            $("#menuitem1").click(function(){
+                while(lefttab > 0){
+                    swaptabs(lefttab, lefttab+6, 0);
+                    lefttab--;
+                }
+            });
+            $("#menuitem2").css("opacity", 0.01).click(function(){
+                while(lefttab > 1){
+                    swaptabs(lefttab, lefttab+6, 0);
+                    lefttab--;
+                }
+            });
+            $("#menuitem3").css("opacity", 0.01).click(function(){
+                while(lefttab > 2){
+                    swaptabs(lefttab, lefttab+6, 0);
+                    lefttab--;
+                }
+            });
+            $("#menuitem4").css("opacity", 0.01).click(function(){
+                while(lefttab > 3){
+                    swaptabs(lefttab, lefttab+6, 0);
+                    lefttab--;
+                }
+            });
+            $("#menuitem5").css("opacity", 0.01).click(function(){
+                while(lefttab > 4){
+                    swaptabs(lefttab, lefttab+6, 0);
+                    lefttab--;
+                }
+            });
+            $("#menuitem6").css("opacity", 0.01).click(function(){
+                while(lefttab > 5){
+                    swaptabs(lefttab, lefttab+6, 0);
+                    lefttab--;
+                }
+            });
+            $("#menuitem7").css("opacity", 0.01).click(function(){
+                while(lefttab < 1){
+                    lefttab++;
+                    swaptabs(lefttab, lefttab+6, 1);
+                }
+            });
+            $("#menuitem8").click(function(){
+                while(lefttab < 2){
+                    lefttab++;
+                    swaptabs(lefttab, lefttab+6, 1);
+                }
+            });
+            $("#menuitem9").click(function(){
+                while(lefttab < 3){
+                    lefttab++;
+                    swaptabs(lefttab, lefttab+6, 1);
+                }
+            });
+            $("#menuitem10").click(function(){
+                while(lefttab < 4){
+                    lefttab++;
+                    swaptabs(lefttab, lefttab+6, 1);
+                }
+            });
+            $("#menuitem11").click(function(){
+                while(lefttab < 5){
+                    lefttab++;
+                    swaptabs(lefttab, lefttab+6, 1);
+                }
+            });
+            $("#menuitem12").click(function(){
+                while(lefttab < 6){
+                    lefttab++;
+                    swaptabs(lefttab, lefttab+6, 1);
+                }
+            });
+            
+        });
+        </script>
+
+    </head>
+    <body style="background-image: url('./img/Desktop.jpg');">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <h1>Kurt's Code Shop</h1>
+        <div id="binder">
+            <div id="access-left" role="navigation">
+                <!-- div class="skip-link screen-reader-text">
+                    <a href="#content" title="Skip to content">Skip to content</a>
+                </div -->
+                <div class="menu-header">
+                    <ul id="menu-menu-1" class="menu">
+                        <li id="menuitem6" class="menu-item menuitemtype-post_type menuitemobject-page menuitem6 dk-blue-bg">Events</li>
+                        <li id="menuitem5" class="menu-item menuitemtype-post_type menuitemobject-page menuitem5 dk-red-bg">Join Us!</li>
+                        <li id="menuitem4" class="menu-item menuitemtype-taxonomy menuitemobject-category menuitem4 yellow-bg">Publications</li>
+                        <li id="menuitem3" class="menu-item menuitemtype-post_type menuitemobject-page menuitem3 green-bg">Our Writers</li>
+                        <li id="menuitem2" class="menu-item menuitemtype-post_type menuitemobject-page menuitem2 blue-bg">About RocNaNo</li>
+                        <li id="menuitem1" class="menu-item menuitemtype-custom menuitemobject-custom current-menu-item current_page_item menuitemhome menuitem1 red-bg">Home</li>
+                    </ul>
+                </div>
+            </div><!-- #access-left -->
+            <div id="access-right" role="navigation">
+                <!-- div class="skip-link screen-reader-text">
+                    <a href="#content" title="Skip to content">Skip to content</a>
+                </div -->
+                <div class="menu-header">
+                    <ul id="menu-menu-2" class="menu">
+                        <li id="menuitem7" class="menu-item menuitemtype-custom menuitemobject-custom current-menu-item current_page_item menuitemhome menuitem7 red-bg">Home</li>
+                        <li id="menuitem8" class="menu-item menuitemtype-post_type menuitemobject-page menuitem8 blue-bg">About RocNaNo</li>
+                        <li id="menuitem9" class="menu-item menuitemtype-post_type menuitemobject-page menuitem9 green-bg">Our Writers</li>
+                        <li id="menuitem10" class="menu-item menuitemtype-taxonomy menuitemobject-category menuitem10 yellow-bg">Publications</li>
+                        <li id="menuitem11" class="menu-item menuitemtype-post_type menuitemobject-page menuitem11 dk-red-bg">Join Us!</li>
+                        <li id="menuitem12" class="menu-item menuitemtype-post_type menuitemobject-page menuitem12 dk-blue-bg">Events</li>
+                    </ul>
+                </div>
+            </div><!-- #access-right -->
+            <div id="leftcol">
+                <h2>Left Column</h2>
+                <p>This is text in the left column.</p>
+                <img src="http://lorempixel.com/100/100/business" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div id="rightcol">
+                <h2>Right Column</h2>
+                <p>This is text in the right column.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="http://lorempixel.com/150/100/cats" />
+                <p>Chuf biting kittens sunbathe hiss, climb the curtains climb the curtains puking judging you biting run. Lay down in your way rip the couch sleep in the sink hairball I don't like that food stuck in a tree, sleep on your keyboard judging you chuf toss the mousie judging you. Lay down in your way hiss stuck in a tree judging you purr, sleep in the sink sleep in the sink lay down in your way lick toss the mousie jump on the table. Sleep in the sink sleep in the sink puking claw hairball rip the couch, toss the mousie knock over the lamp lay down in your way sniff. Feed me eat the grass jump on the table kittens sleep in the sink shed everywhere, stretching stuck in a tree catnip scratched leap. Run jump eat tail flick shed everywhere sleep in the sink, tail flick feed me claw leap jump tail flick.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

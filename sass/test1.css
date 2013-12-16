@@ -1,0 +1,129 @@
+/* colors */
+/* background color classes */
+.red-bg {
+  background-color: red; }
+
+.lt-red-bg {
+  background-color: #ff7373; }
+
+.dk-red-bg {
+  background-color: #a60000; }
+
+.blue-bg {
+  background-color: #3914af; }
+
+.lt-blue-bg {
+  background-color: #876ed7; }
+
+.dk-blue-bg {
+  background-color: #200772; }
+
+.green-bg {
+  background-color: #00cc00; }
+
+.lt-green-bg {
+  background-color: #67e667; }
+
+.dk-green-bg {
+  background-color: #008500; }
+
+.yellow-bg {
+  background-color: #ffd300; }
+
+.lt-yellow-bg {
+  background-color: #ffe773; }
+
+.dk-yellow-bg {
+  background-color: #a68900; }
+
+/* menus */
+#access-left {
+  position: absolute;
+  top: 690px;
+  left: 92px;
+  overflow-y: hidden;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  width: 680px;
+  height: 24px;
+  /* border: 1px solid black; */
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform-origin: left bottom;
+  -webkit-transform-origin: left bottom; }
+
+#access-right {
+  position: absolute;
+  top: 42px;
+  left: 1048px;
+  overflow-y: hidden;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  width: 680px;
+  height: 24px;
+  /* border: 1px solid black; */
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform-origin: left bottom;
+  -webkit-transform-origin: left bottom; }
+
+.menu-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: visible;
+  height: 24px; }
+.menu-header li {
+  float: left;
+  width: 90px;
+  margin: 0 5px;
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+  overflow-x: hidden; }
+  .menu-header li a {
+    color: white; }
+
+.faded {
+  opacity: 0.1; }
+
+h1 {
+  text-align: center; }
+
+#binder {
+  background: transparent url("../img/Notebook-Open.png") no-repeat left top;
+  width: 1140px;
+  height: 735px;
+  padding: 0px;
+  margin: auto;
+  position: relative;
+  border: 0px solid black; }
+
+#leftcol {
+  position: relative;
+  left: 93px;
+  top: 24px;
+  width: 427px;
+  height: 680px;
+  border: 0px solid black;
+  padding: 5px;
+  z-index: 10; }
+  #leftcol img {
+    float: left;
+    margin-right: 5px; }
+
+#rightcol {
+  position: relative;
+  left: 610px;
+  top: -666px;
+  width: 427px;
+  height: 680px;
+  border: 0px solid black;
+  padding: 5px;
+  z-index: 10;
+  overflow-y: auto; }
+  #rightcol img {
+    float: right;
+    margin-left: 5px; }
